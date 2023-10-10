@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <h1 class="log">Login</h1>
+    <p class="script">Welcome back! let's take you to your account.</p>
+    <form action="/login" method="POST" class="register">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="email" name="email" placeholder="Email Address" type="email">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password">
+        </div>
+        <a href="/change" class="reset">Reset your password?</a>
+        <p class="error-message">{{ error_message }}</p>
+        <button class="btn btn1 btn-dark" type="submit">Login</button>
+        <p class="sign">Don't have an account? <span><a href="/register">Sign up</a></span></p>
+    </form>
+{% endblock %}

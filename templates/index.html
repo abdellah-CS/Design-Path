@@ -1,0 +1,77 @@
+{% extends "layouts.html" %}
+
+{% block title %}
+    Home page
+{% endblock %}
+
+{% block main %}
+<section id="intro">
+    <div>
+        <img class="" src="{{ url_for('static', filename='images/logo-icon-light.png') }}">
+        <h1>Design Path</h1>
+        <p>Design Path is a platform offering design skills roadmaps and tutorial videos, guiding learners to acquire expertise in design skills effectively.</p>
+    </div>
+</section>
+
+
+<section id="roads">
+    <h5 class="divider line one-line" contenteditable>Skill based Roadmaps</h5>
+    <div class="row">
+        <div class="f col-lg-4 col-md-6">
+            <a class="btn" href="/graphic">Graphic Design</a>
+        </div>
+        <div class="s col-lg-4 col-md-6">
+            <a class="btn" href="/uiux">UI/UX Design</a>
+        </div>
+        <div class="t col-lg-4 col-md-6">
+            <a class="btn" href="/motion">Motion Design</a>
+        </div>
+        <div class="f col-lg-4 col-md-6">
+            <a class="btn">Web Design</a>
+        </div>
+        <div class="s col-lg-4 col-md-6">
+            <a class="btn" href="/video-editing">Video Editing</a>
+        </div>
+        <div class="t col-lg-4 col-md-6">
+            <a class="btn" href="/3d-art">3D Art</a>
+        </div>
+        <div class="f col-lg-4 col-md-6">
+            <a class="btn" href="/logo">Logo Design</a>
+        </div>
+        <div class="s col-lg-4 col-md-6">
+            <a class="btn" href="/print">Print Design</a>
+        </div>
+        <div class="t col-lg-4 col-md-6">
+            <a class="btn" href="/nft">NFT Art</a>
+        </div>
+        <div class="f col-lg-4 col-md-6">
+            <a class="btn" href="/packaging">Packaging Design</a>
+        </div>
+        <div class="s col-lg-4 col-md-6">
+            <a class="btn" href="/animation">Animation</a>
+        </div>
+    </div>
+</section>
+
+
+<section id="vids">
+    <h3>Videos tutorials</h3>
+    <div class="videos">
+        <a href="https://youtu.be/pD4cap1H3fM?feature=shared" class="link"><span>So You Want To Be A Graphic Designer? 2023</span> <span>10 min</span></a>
+        <a href="https://youtu.be/HmKwiEmJIdM?feature=shared" class="link"><span>Become a UI/UX designer in 2023</span> <span>12 min</span></a>
+        <a href="https://youtu.be/N3DWVq7X7Ss?feature=shared" class="link"><span>How I Would Learn Motion Design</span> <span>8 min</span></a>
+        <a href="https://youtu.be/O4MtPWj512A?feature=shared" class="link"><span>How to Become a FULL TIME Web Designer 2023</span> <span>14 min</span></a>
+        <a href="https://youtu.be/2LH2pVInNwg?feature=shared" class="link"><span>How to become a Pro Video Editor (Full Guide)</span> <span>13 min</span></a>
+        <a href="https://youtu.be/8K4AShjq-MU?feature=shared" class="link"><span>The BEST Way To Learn Blender in 3d art</span> <span>16 min</span></a>
+        <a href="https://youtu.be/mWkDlg3O-LY?feature=shared" class="link"><span>Just 30 Days And You'll Master LOGO DESIGN</span> <span>12 min</span></a>
+        <a href="https://youtu.be/HnA75TAD-No?feature=shared" class="link"><span>Easiest Way To Create An NFT And Sell It in 2023</span> <span>8 min</span></a>
+    </div>
+    <div class="link link2">
+        <a href="/videos" class="btn3">See all videos</a>
+    </div>
+</section>
+
+
+<!--footer layout-->
+{% endblock %}
+
